@@ -39,7 +39,13 @@
 
 Also review the alt text on all of the images to ensure that it is descriptive and appropriate-->
         <header>
-            <img src="images/logo-L.png" alt="The Wunderlust logo shows blue waves and the outline of two palm trees against an orange sun">
+            <picture>
+                <source media="(min-width: 1264px)" srcset="images/logo-L.png" />
+                <source media="(min-width: 676px)" srcset="images/logo-M.png" />
+                <source media="(max-width: 675px)" srcset="images/logo-S.png" />
+                <img src="images/logo-L.png" alt="The Wunderlust logo shows blue waves and the outline of two palm trees against an orange sun"" />
+              </picture>
+        
             <h1>Wunderlust Travel</h1>
             <p>Let Wunderlust Travel help you plan the trip of your dreams!</p>
             <nav>
@@ -56,9 +62,60 @@ Also review the alt text on all of the images to ensure that it is descriptive a
             <article>  
                 <h2>Majorca</h2>
                 <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
-                <img src="images/majorca-waves.png" alt="Turquoise blue waters with white wave caps crashing against a rock cliff">
-                <img src="images/majorca-beach.png" alt="beach">
-                <img src="images/majorca-cove.png" alt="Deep blue water leading to the horizon with the island and trees in the foreground">
+                <picture>
+                    <source
+                      media="(min-width: 1264px)"
+                      srcset="images/majorca-waves-L.png"
+                    />
+                    <source
+                      media="(min-width: 676px)"
+                      srcset="images/majorca-waves-M.png"
+                    />
+                    <source
+                      media="(max-width: 675px)"
+                      srcset="images/majorca-waves-S.png"
+                    />
+                    <img
+                      src="images/majorca-waves-L.png"
+                      alt="Turquoise blue waters with white wave caps crashing against a rock cliff"
+                    />
+                </picture>
+                <picture>
+                    <source
+                      media="(min-width: 1264px)"
+                      srcset="images/majorca-beach-L.png"
+                    />
+                    <source
+                      media="(min-width: 676px)"
+                      srcset="images/majorca-beach-M.png"
+                    />
+                    <source
+                      media="(max-width: 675px)"
+                      srcset="images/majorca-beach-S.png"
+                    />
+                    <img
+                      src="images/majorca-beach-L.png"
+                      alt="Breathtaking view of Majorca shoreline with white sand and lush trees"
+                    />
+                </picture>
+                <picture>
+                    <source
+                      media="(min-width: 1264px)"
+                      srcset="images/majorca-cove-L.png"
+                    />
+                    <source
+                      media="(min-width: 676px)"
+                      srcset="images/majorca-cove-M.png"
+                    />
+                    <source
+                      media="(max-width: 675px)"
+                      srcset="images/majorca-cove-S.png"
+                    />
+                    <img
+                      src="images/majorca-cove-L.png"
+                      alt="Deep blue water leading to the horizon with the island and trees in the foreground"
+                    />
+                </picture>
                 <section>
                     <h3>Plan Your Trip</h3>
                     <section>
