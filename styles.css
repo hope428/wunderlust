@@ -1,0 +1,144 @@
+/* Author: Leon Forsythe */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* variables */
+:root {
+    --yellow: #F6D64A;
+    --teal: #55BCD5;
+    --purple: #9B26B0;
+    --blue: #499BD2;
+    --dk-gray: #222222;
+    --lt-gray: #eaeaea;
+    --white: #ffffff;
+    --black: #000000;
+
+    --molle: "Molle", cursive;
+    --monsterrat: "Monsterrat", sans-serif;
+
+}
+
+/* skip link */
+#skip {
+  left: 50%;
+  background: var(--yellow);
+  height: 30px;
+  left: 50%;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+  #skip:focus {
+    transform: translateY(0%);
+  }
+
+/* header */
+header {
+    display: grid;
+    grid-template-areas:   
+        "logo logo menu menu"
+        "content content content content"
+    ;
+    background-image: linear-gradient(180deg, var(--teal), var(--white));
+    padding-top: 1rem;
+}
+
+header a {
+    grid-area: logo;
+}
+
+header nav{
+    grid-area: menu;
+}
+
+#headContent {
+    grid-area: content;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+header h1{
+    font-family: var(--molle);
+    font-size: 4rem;
+}
+
+header p {
+    font-family: var(--monsterrat);
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.7;
+}
+
+/* intro section styles */
+#intro h2, #intro p {
+    padding: .5rem 1.5rem;
+}
+
+#intro h2 {
+    font-family: var(--molle);
+    font-size: 3rem;
+}
+
+#intro p {
+    font-family: var(--monsterrat);
+    line-height: 1.7;
+    font-weight: lighter;
+    font-size: 1.5rem;
+
+}
+
+#img-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+}
+
