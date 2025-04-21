@@ -236,6 +236,17 @@ header p {
     place-items: center;
 }
 
+#about div section {
+    font-family: var(--monsterrat);
+    text-align: center;
+    line-height: 1.5rem;
+}
+#about div section h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
 #about div section img{
     width: 120px;
     height: 120px;
@@ -257,10 +268,10 @@ header p {
     gap: .5rem;
 }
 
-#names input {
+#names input, #nums input[type="email"], #nums input[type="tel"], select {
     border: 3px solid var(--purple);
     height: 50px;
-    width: 70%;
+    width: 80%;
 }
 
 #nums fieldset {
@@ -310,7 +321,52 @@ fieldset label {
     color: var(--purple);
 }
 
+#selects {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
 
+#mySubmit {
+    width: 80%;
+    background-color: var(--purple);
+    height: 50px;
+    border: none;
+    color: var(--white);
+    font-family: var(--monsterrat);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
 
+#contact h3 {
+    font-family: var(--molle);
+    font-weight: bold;
+    text-transform: none;
+    font-size: 2rem;
+}
 
+#contact h3 .form-required {
+    all: unset;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 300;
+    font-family: var(--monsterrat);
+    font-size: 1rem;
+}
 
+footer {
+    background-color: var(--lt-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1rem;
+    font-family: var(--monsterrat);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--black);
+}
