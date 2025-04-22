@@ -49,6 +49,10 @@ table {
 	border-spacing: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* variables */
 :root {
     --yellow: #F6D64A;
@@ -80,15 +84,81 @@ table {
     transform: translateY(0%);
   }
 
+/* nav */
+#toggle {
+    display: none;
+}
+
+.sr-only {
+    display: none;
+}
+
+#menu-toggle label {
+    background-color: var(--yellow);
+    padding: 1.5rem 4rem;
+    display: block;
+    font-family: var(--monsterrat);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+#menu-toggle ul {
+    display: none;
+}
+
+#menu-toggle input[type="checkbox"]:checked + label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100vw;
+    width: 100%;
+    z-index: 2;
+    background-color: var(--dk-gray);
+    color: var(--white);
+}
+
+#menu-toggle input[type="checkbox"]:checked + label + ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    max-width: 100vw;
+    width: 100%;
+    top: 4rem;
+    left: 0;
+    height: auto;
+    background-color: var(--teal);
+
+}
+
+  #menu-toggle ul li {
+    width: 100%;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  #menu-toggle ul a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: var(--monsterrat);
+  }
+
 /* header */
 header {
     display: grid;
     grid-template-areas:   
-        "logo logo menu menu"
+        "logo logo logo menu"
         "content content content content"
     ;
     background-image: linear-gradient(180deg, var(--teal), var(--white));
-    padding-top: 1rem;
+    padding: 1rem 0;
 }
 
 header a {
