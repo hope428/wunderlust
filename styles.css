@@ -562,4 +562,29 @@ footer a {
         height: 300px;
     }
 
+    /* plan / testimonials / about */
+
+    #plan div, #testimonials div {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    #plan section {
+        max-width: 200px;
+        height: auto;
+    }
+
+    #plan h4 {
+        font-size: 16px;
+    }
+
+    #plan section img{
+        max-width: 50%;
+        height: auto;
+    }
+
+    #about div {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
 }
