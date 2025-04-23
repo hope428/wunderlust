@@ -587,4 +587,27 @@ footer a {
         padding-left: 5rem;
         padding-right: 5rem;
     }
+
+    #contact form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    #mySubmit {
+        width: 50%;
+        align-self: end;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    footer p{
+        grid-column: 1 / span 3;
+    }
+
 }
