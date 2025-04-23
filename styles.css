@@ -131,7 +131,6 @@ table {
     left: 0;
     height: auto;
     background-color: var(--teal);
-
 }
 
   #menu-toggle ul li {
@@ -439,4 +438,50 @@ footer {
 footer a {
     text-decoration: none;
     color: var(--black);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    header {
+        grid-template-areas:   
+        "logo content content content"
+        "menu menu menu menu";
+
+        align-items: center;
+    }
+
+    #menu-toggle label {
+        display: none;
+    }
+
+    #menu-toggle ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3rem;
+        margin: 0 3rem;
+    }
+
+    #menu-toggle ul li {
+        border: none;
+        background-color: var(--white);
+        font-weight: bold;
+    }
+
+    #menu-toggle .active {
+        background-color: var(--yellow);
+    }
+
+    /* images */
+    #img-grid {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 3rem;
+
+    }
+
+    picture {
+        grid-column: 1 / -1;
+    }
+
+    /* plan */
+    
 }
