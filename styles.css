@@ -440,7 +440,7 @@ footer a {
     color: var(--black);
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
     header {
         grid-template-areas:   
         "logo content content content"
@@ -514,5 +514,25 @@ footer a {
         justify-content: flex-end;
         padding-right: 3rem;
     }
+
+}
+
+@media (min-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #menu-toggle ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #menu-toggle ul li{
+        padding: 1rem;
+        font-size: 12px;
+    }
+
 
 }
