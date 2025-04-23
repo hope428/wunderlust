@@ -527,6 +527,7 @@ footer a {
         position: absolute;
         top: 0;
         right: 0;
+        gap: 1rem;
     }
 
     #menu-toggle ul li{
@@ -534,5 +535,31 @@ footer a {
         font-size: 12px;
     }
 
+    #intro {
+        display: grid;
+        grid-template-areas: "head imgGrid imgGrid"
+                            "text imgGrid imgGrid"
+                            ". imgGrid imgGrid"
+                            ". imgGrid imgGrid";
+        grid-gap: 0.25rem;
+        padding: 3rem;
+    }
+
+    #intro h2 {
+        grid-area: head;
+    }
+    #intro p {
+        grid-area: text;
+        font-size: 1rem;
+    }
+
+    #img-grid {
+        grid-area: imgGrid;
+        width: 900px;
+    }
+
+    #img-grid img{
+        height: 300px;
+    }
 
 }
