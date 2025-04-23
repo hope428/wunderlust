@@ -340,7 +340,7 @@ header p {
 #names input, #nums input[type="email"], #nums input[type="tel"], select {
     border: 3px solid var(--purple);
     height: 50px;
-    width: 80%;
+    width: 100%;
 }
 
 #nums fieldset {
@@ -397,7 +397,7 @@ fieldset label {
 }
 
 #mySubmit {
-    width: 80%;
+    width: 100%;
     background-color: var(--purple);
     height: 50px;
     border: none;
@@ -482,6 +482,32 @@ footer a {
         grid-column: 1 / -1;
     }
 
-    /* plan */
-    
+    /* plan / testimonials / about */
+
+    #plan h3 {
+        text-align: left;
+        margin-left: 5rem;
+    }
+
+    #plan div, #testimonials div {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #about div {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* contact */
+    #contact {
+        display: flex;
+        flex-direction: column;
+        padding: 0 3rem;
+    }
+
+    #nums fieldset {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
 }
